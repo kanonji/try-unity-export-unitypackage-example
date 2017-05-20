@@ -12,5 +12,6 @@ ${UNITY} \
   -silent-crashes \
   -logfile ${LOG_FILE} \
   -quit &
-tail -f --pid $! ${LOG_FILE} &
+tail -f ${LOG_FILE} &
 fg %1
+kill %2

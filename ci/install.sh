@@ -1,5 +1,6 @@
 #! /bin/sh
-BASE_URL=http://download.unity3d.com/download_unity
+#BASE_URL=http://download.unity3d.com/download_unity
+BASE_URL=http://netstorage.unity3d.com/unity
 
 download() {
   file=$1
