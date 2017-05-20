@@ -9,7 +9,7 @@ ${UNITY} \
   -projectPath $(pwd) \
   -batchmode \
   -nographics \
-  -silent-crashes \
+#  -silent-crashes \
   -logfile ${LOG_FILE} \
   -quit &
 tail -f ${LOG_FILE} &
