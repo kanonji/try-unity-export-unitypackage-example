@@ -1,0 +1,12 @@
+os: osx
+rvm:
+  - 2.2
+env:
+  - UNITY_VERSION=5.0.0 UNITY_HASH=5b98b70ebeb9 EXPORT_DIRS=Assets/LightShafts PACKAGE_NAME=LightShafts
+before_install:
+  - chmod a+x ./ci/install.sh
+  - chmod a+x ./ci/export.sh
+install:
+  - ./ci/install.sh
+script:
+  - ./ci/export.sh
