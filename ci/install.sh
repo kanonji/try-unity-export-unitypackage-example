@@ -14,6 +14,7 @@ install() {
   download "${package}"
 
   echo "Installing "`basename "${package}"`
+ls -al
   sudo installer -dumplog -package `basename "${package}"` -target /
 }
 
