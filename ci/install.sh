@@ -12,10 +12,10 @@ download() {
 install() {
   package=$1
   download "${package}"
-
-  echo "Installing "`basename "${package}"`
 ls -al
-  sudo installer -dumplog -package `basename "${package}"` -target /
+
+  echo "Installing "`basename "$package"`
+  sudo installer -dumplog -package `basename "$package"` -target /
 }
 
 # See $BASE_URL/$UNITY_HASH/unity-$UNITY_VERSION-$PLATFORM.ini for complete list
