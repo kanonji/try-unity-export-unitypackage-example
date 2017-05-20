@@ -15,3 +15,5 @@ ${UNITY} \
 tail -f ${LOG_FILE} &
 fg %1
 kill %2
+cat${LOG_FILE}
+ls -al
