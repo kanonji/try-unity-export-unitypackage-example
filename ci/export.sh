@@ -9,11 +9,12 @@ ${UNITY} \
   -projectPath $(pwd) \
   -batchmode \
   -nographics \
-#  -silent-crashes \
   -logfile ${LOG_FILE} \
   -quit &
+PID=$!
 tail -f ${LOG_FILE} &
-fg %1
-kill %2
-cat${LOG_FILE}
+PID_TAIL=$!
+fg ${PID}
+kill ${PID_TAIL}
+cat ${LOG_FILE}
 ls -al
