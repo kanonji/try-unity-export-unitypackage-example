@@ -1,4 +1,5 @@
 #! /bin/sh
+set -evu
 
 UNITY=/Applications/Unity/Unity.app/Contents/MacOS/Unity
 PROJECT_PATH=$(pwd)

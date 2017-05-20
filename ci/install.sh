@@ -1,4 +1,6 @@
 #! /bin/sh
+set -evu
+
 BASE_URL=http://download.unity3d.com/download_unity
 
 download() {
